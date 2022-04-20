@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "hitss-on-app",
+    "slug": "hitss-on-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "hitss-on-app"
+}
