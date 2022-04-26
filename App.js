@@ -27,6 +27,11 @@ export default function App() {
         <Text style={styles.textAppBar}>HitssOn</Text>
       </View>
 
+      <CardTitleDescription 
+        title="MEU NOME É"
+        description="SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA">
+      </CardTitleDescription> 
+
       <FlatList
         data={courses}
         renderItem={renderItem}
