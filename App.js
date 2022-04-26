@@ -3,6 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View, FlatList, SafeAreaView } from 'react-native';
 import CardTitleDescription from './src/components/CardTitleDescription';
 import coursesApi from './services/courses';
+import AccordionDefault from './src/components/Accordion';
 
 export default function App() {
   
@@ -27,6 +28,10 @@ export default function App() {
         <Text style={styles.textAppBar}>HitssOn</Text>
       </View>
 
+      <AccordionDefault title="MEU NOME É">
+        <Text style={styles.textDescription}>SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA</Text>
+      </AccordionDefault>
+
       <CardTitleDescription 
         title="MEU NOME É"
         description="SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA SAMUEL LUCAS DA SILVA SENA">
@@ -37,7 +42,6 @@ export default function App() {
         renderItem={renderItem}
         keyExtractor={item => item.id}
       />
-      <StatusBar style="auto" />
     </SafeAreaView>
   );
 }
@@ -58,5 +62,9 @@ const styles = StyleSheet.create({
   textAppBar: {
     color: '#fff',
     fontSize: 22
+  },
+  textDescription: {
+    color: '#444',
+		fontSize: 16,
   }
 });
